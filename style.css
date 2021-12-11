@@ -1,0 +1,24 @@
+.outer-cont{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+
+  min-height: 90vh;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cont:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,.5);
+}
+.cont {
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
